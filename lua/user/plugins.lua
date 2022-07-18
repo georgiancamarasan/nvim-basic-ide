@@ -83,6 +83,8 @@ return packer.startup(function(use)
   use { "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
   use { "j-hui/fidget.nvim", commit = "46d1110435f1f023c22fa95bb10b3906aecd7bde" } -- Standalone UI for nvim-lsp progress. Eye candy for the impatient.
+  use { 'folke/lsp-colors.nvim', commit = "517fe3ab6b63f9907b093bc9443ef06b56f804f3" } -- Automatically creates missing LSP diagnostics...
+  -- use { 'folke/trouble.nvim', commit = "da61737d860ddc12f78e638152834487eabf0ee5" } -- A pretty list for showing diagnostics, references, telescope results...
   -- }}}
 
   -- Rust {{{
