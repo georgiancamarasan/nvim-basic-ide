@@ -9,9 +9,9 @@ local servers = {
   "html",
   "tsserver",
   "pyright",
-  "bashls",
   "jsonls",
   "yamlls",
+  "rust_analyzer"
 }
 
 lsp_installer.setup()

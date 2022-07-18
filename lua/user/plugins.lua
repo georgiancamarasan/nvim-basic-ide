@@ -82,6 +82,11 @@ return packer.startup(function(use)
   use { "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" } -- simple to use language server installer
   use { "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
+  use { "j-hui/fidget.nvim", commit = "46d1110435f1f023c22fa95bb10b3906aecd7bde" } -- Standalone UI for nvim-lsp progress. Eye candy for the impatient.
+  -- }}}
+
+  -- Rust {{{
+  use { "simrat39/rust-tools.nvim", commit = "11dcd674781ba68a951ab4c7b740553cae8fe671"}
   -- }}}
 
   -- Telescope {{{
