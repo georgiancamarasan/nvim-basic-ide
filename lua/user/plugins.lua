@@ -93,6 +93,7 @@ return packer.startup(function(use)
 
   -- Telescope {{{
   use { "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" }
+  use { "nvim-telescope/telescope-fzf-native.nvim", commit= "6791f74e9f08a9412c43dcba805ecf2f8888bdde", run = 'make' }
   -- }}}
 
   -- Treesitter {{{
