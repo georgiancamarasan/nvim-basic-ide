@@ -4,14 +4,22 @@ if not status_ok then
 end
 
 local servers = {
-  "sumneko_lua",
+  "angularls",
+  "ansiblels",
+  "csharp_ls",
   "cssls",
+  "dockerls",
+  "eslint",
   "html",
-  "tsserver",
-  "pyright",
   "jsonls",
+  "omnisharp",
+  "pyright",
+  "rust_analyzer",
+  "sqlls",
+  "sumneko_lua",
+  "terraformls",
+  "tsserver",
   "yamlls",
-  "rust_analyzer"
 }
 
 lsp_installer.setup()
@@ -37,6 +45,11 @@ for _, server in pairs(servers) do
   if server == "pyright" then
     local pyright_opts = require "user.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  end
+
+  if server == "omnisharp" then
+    local omnisharp_opts = require "user.lsp.settings.omnisharp"
+    opts = vim.tbl_deep_extend("force", omnisharp_opts, opts)
   end
 
   lspconfig[server].setup(opts)
