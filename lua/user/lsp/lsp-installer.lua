@@ -6,7 +6,6 @@ end
 local servers = {
   "angularls",
   "ansiblels",
-  "csharp_ls",
   "cssls",
   "dockerls",
   "eslint",
