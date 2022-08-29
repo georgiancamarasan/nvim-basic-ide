@@ -49,6 +49,10 @@ keymap("n", "<leader>x", ":x<ENTER>", opts)
 keymap("n", "<Leader>q", "<cmd>Bdelete!<CR>", opts) -- Close buffers
 -- }}}
 
+-- LSP commands {{{
+keymap('n', '<Leader>lf', 'vim.lsp.buf.formatting', opts)
+-- }}}
+
 -- file commands {{{
 keymap('n', '<Leader>w', ':w<CR>', opts)
 keymap('n', '<C-s>', ':wa<CR>', opts)
